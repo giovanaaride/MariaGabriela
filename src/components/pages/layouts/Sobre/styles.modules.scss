@@ -70,4 +70,11 @@
             }
         }
     }
+
+    @media screen and (min-width: 800px) {
+        .img {
+            width: 70rem;
+            height: 5rem;
+        }
+    }
 }

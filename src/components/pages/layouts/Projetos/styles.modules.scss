@@ -1,0 +1,100 @@
+.containerprojetos {
+    height: 85vh;
+    width: 100%;
+    background-color: #f1e2fb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+
+    .tituloproj {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+
+        .titulo {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            top: -70px;
+            right: 10rem;
+
+            h2 {
+                font-size: 3rem;
+                margin: 0 1rem;
+            }
+
+            .linha {
+                width: 17rem;
+                height: 0.2rem;
+                background-color: #fc32b8;
+            }
+        }
+    }
+
+    .projetos {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin-top: 5rem;
+        background-color: #f1e2fb;
+
+        z-index: 2;
+
+        a {
+            display: block;
+            position: relative;
+            text-align: center;
+
+            img {
+                height: 22rem;
+                width: 17rem;
+                display: block;
+                transition:
+                    transform 0.7s,
+                    opacity 0.7s;
+                opacity: 0.7;
+            }
+
+            .projeto-text {
+                position: absolute;
+                width: 15rem;
+                text-wrap: wrap;
+                top: 85%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2rem;
+                color: rgb(0, 0, 0);
+                transition: opacity 0.7s ease;
+            }
+
+            &:hover .projeto-text {
+                opacity: 0;
+            }
+
+            &:hover img {
+                transform: scale(1.1);
+                opacity: 1;
+            }
+        }
+    }
+
+    .endproj {
+        position: absolute;
+        bottom: 1rem;
+        right: 1.33rem; 
+        transform: translate(5%, 5%); 
+
+        width: 27rem; 
+        height: 20rem; 
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+}
