@@ -7,6 +7,8 @@ import imageEstrelasproj from '../../../../assets/Estrelas divisão de página.p
 
 function Projetos() {
     return (
+        <section id="projetos">
+      
         <div className="containerprojetos">
             <div className="tituloproj">
                 <div className="titulo">
@@ -35,6 +37,7 @@ function Projetos() {
             <img src={imageEstrelasproj} alt="Desenho" />
             </div>
         </div>
+        </section>
     );
 }
 

@@ -5,6 +5,7 @@ import Projetos from './components/pages/layouts/Projetos';
 import Contatos from './components/pages/layouts/Contatos';
 
 function App() {
+
   return (
     <div>
       <Header />
