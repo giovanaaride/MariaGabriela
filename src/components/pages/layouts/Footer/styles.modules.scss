@@ -1,0 +1,32 @@
+.container-footer {
+    height: 10vh;
+    width: 100%;
+    background: linear-gradient(0deg, #F1E2FB 0.21%, #F7CECC 0.21%, #F5D3D7 1.81%, #F8C8BE 3.87%, #FBC0AA 24.5%, #FDB999 46.51%, #FFB084 71.6%);    border-top: solid 1px #e82eaa;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .footer-content {
+        h4 {
+            font-size: 1.25rem;
+            color: #000000;
+
+            a {
+                text-decoration-line: none;
+                text-decoration: none;
+                color: #DE0EB0;
+            }
+        }
+    }
+
+    //Responsivo
+
+    @media (max-width: 390px) {
+        .footer-content{
+            h4 {
+                font-size: .875rem;
+            }
+        }
+    }
+}

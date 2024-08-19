@@ -3,7 +3,7 @@
     position: absolute;
     background-color: transparent;
     width: 100%;
-    display: block; /* Exibe por padrão em telas maiores */
+    display: block;
 }
 
 .header {
@@ -61,13 +61,13 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .containerheader {
-        display: none; /* Esconde o container em telas menores */
+        display: none; 
     }
 
     .header {
-        display: none; /* Esconde o header em telas menores */
+        display: none; 
     }
 }
 

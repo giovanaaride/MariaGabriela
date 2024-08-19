@@ -12,10 +12,11 @@
 
         height: 100vh;
         width: 100%;
-        overflow: hidden; /* Esconde qualquer coisa que vá além da div */
+        overflow: hidden; 
 
         .background_img {
-            z-index: -1;
+            z-index: -1; 
+            position: relative; 
         }
 
         .logo {
@@ -23,38 +24,40 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: 1;
+            z-index: 1; 
             transition: opacity 0.5s ease-out;
-            
+
             .logo_img {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
-                z-index: 10;
+                z-index: 10; /* Garante que a imagem da logo fique à frente de tudo */
 
                 img {
                     width: 16rem;
                     height: 17rem;
                 }
-
-                
             }
         }
     }
 
-    @media (max-width: 1024px) {
-        width: 12rem;
-        height: 13rem;
-    }
+    
+    & + .container {
+        margin-top: 2rem; /* Adiciona espaço entre esta seção e a próxima */    }
 
-    @media (max-width: 768px) {
-        width: 10rem;
-        height: 11rem;
-    }
-
-    @media (max-width: 480px) {
-        width: 8rem;
-        height: 9rem;
+    @media (max-width: 800px) {
+        
+        height: auto; 
+        
+        .background {
+            height: auto;
+            flex-direction: column; 
+        }
+        
+        .logo {
+            top: auto;
+            bottom: 2rem; 
+            transform: translate(-50%, 0); 
+        }
     }
 }
