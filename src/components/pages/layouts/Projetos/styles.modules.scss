@@ -51,6 +51,7 @@
             img {
                 height: 22rem;
                 width: 17rem;
+                
                 display: block;
                 border: #fc32b8 solid 0.1rem;
                 border-top-left-radius: 8.5rem;
@@ -102,6 +103,7 @@
 
     // Responsivo
     @media (max-width: 1350px) {
+        
         .tituloproj .titulo {
             top: -60px;
             right: 5rem;
