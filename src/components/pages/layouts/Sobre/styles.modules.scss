@@ -4,6 +4,7 @@
     background-color: #f1e2fb;
     font-family: "Jacques Francois", serif;
     position: relative;
+    overflow: hidden;
 
     .estrela_img {
         position: absolute;
@@ -11,9 +12,10 @@
         left: 0;
         height: 100vh;
         width: 100%;
+        object-fit: cover;
 
         .img {
-            height: 100vh;
+            height: 95vh;
             object-fit: cover;
         }
     }
@@ -35,6 +37,7 @@
         align-items: flex-start;
         height: 100%;
         padding: 3rem;
+        box-sizing: border-box;
 
         .sobre {
             width: +50%;
@@ -78,7 +81,7 @@
 
             .img {
                 width: auto;
-                height: 100%;
+                height: 95%;
             }
 
             .linhatopo {
@@ -100,8 +103,8 @@
             height: 25rem;
 
             .img {
-                height: 100%;
-                object-fit: cover;
+                width: auto;
+                height: 95%;
             }
         }
 
@@ -148,8 +151,8 @@
             height: 30rem;
 
             .img {
-                height: 100%;
-                object-fit: cover;
+                width: auto;
+                height: 95%;
             }
         }
 

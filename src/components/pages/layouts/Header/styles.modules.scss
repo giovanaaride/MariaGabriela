@@ -9,12 +9,12 @@
 .header {
     display: flex;
     justify-content: space-between;
-    font-family: 'Italiana', serif;
+    font-family: "Italiana", serif;
 
     .name {
         display: flex;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: #fff;
     }
 
@@ -23,37 +23,37 @@
         align-items: center;
 
         ul {
-            display: flex;
-            flex-direction: row;
-            gap: 48px;
-            font-size: 1.5rem;
             list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.75rem;
 
             li {
                 position: relative;
 
                 a {
                     text-decoration: none;
-                    color: #fff;
-                    position: relative;
-                    padding-bottom: 0.2rem;
-                    transition: color 0.3s ease-in-out; /* Transição de cor ao passar o mouse */
+                    color: #ffffff;
+                    padding: 1rem 0;
+                    display: inline-block;
+                    font-size: 1.5rem;
 
+                    // Pseudo-elemento para a linha
                     &::after {
                         content: "";
                         position: absolute;
                         left: 0;
-                        bottom: -0.1rem;
-                        width: 100%;
-                        height: 0.2rem;
-                        background-color: #de0eb0;
-                        transform: scaleX(0); /* Escala inicial para 0 (invisível) */
-                        transform-origin: left; 
-                        transition: transform 0.3s ease-in-out;
+                        bottom: 1rem;
+                        width: 0;
+                        height: 2px;
+                        background-color: #fc32b8;
+                        transition: width 0.3s ease-in-out;
                     }
 
+                    // Efeito de hover
                     &:hover::after {
-                        transform: scaleX(1); /* Escala (visível) ao passar o mouse */
+                        width: 100%;
                     }
                 }
             }
@@ -61,93 +61,17 @@
     }
 }
 
+@media (max-width: 1024px) {
+    .name {
+        width: 17rem;
+    }
+}
 @media (max-width: 850px) {
     .containerheader {
-        display: none; 
+        display: none;
     }
 
     .header {
-        display: none; 
+        display: none;
     }
 }
-
-
-
-// .containerheader {
-//     padding: 1rem 15% 1% 5%;
-//     position: absolute;
-//     background-color: transparent;
-//     width: 100%;
-
-//     .header {
-//         display: flex;
-//         justify-content: space-between;
-//         font-family: 'Italiana', serif;
-
-//         .name {
-//             display: flex;
-//             align-items: center;
-//             font-size: 1.5rem;
-//             color: #fff;
-//         }
-
-//         .menu {
-//             display: flex;
-//             align-items: center;
-
-//             ul {
-//                 display: flex;
-//                 flex-direction: row;
-//                 gap: 48px;
-//                 font-size: 1.5rem;
-//                 list-style: none;
-
-//                 li {
-//                     position: relative;
-
-//                     a {
-//                         text-decoration: none;
-//                         color: #fff;
-//                         position: relative;
-//                         padding-bottom: 0.2rem;
-//                         transition: color 0.3s ease-in-out; /* Transição de cor ao passar o mouse */
-
-//                         &::after {
-//                             content: "";
-//                             position: absolute;
-//                             left: 0;
-//                             bottom: -0.1rem;
-//                             width: 100%;
-//                             height: 0.2rem;
-//                             background-color: #de0eb0; 
-//                             transform: scaleX(0); /* Escala inicial para 0 (invisível) */
-//                             transform-origin: left; 
-//                             transition: transform 0.3s ease-in-out; /* Transição da transformação */
-//                         }
-
-//                         &:hover::after {
-//                             transform: scaleX(1); /* Escala (visível) ao passar o mouse */
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-
-//     @media screen and (max-width: 800px) {
-//         .background {      
-//           h1 {
-//             font-size: 2.6rem;
-//           }
-    
-//           p {
-//             font-size: 1.2rem;
-//             margin-bottom: 2rem;
-//           }
-    
-//           button {
-//             margin-bottom: 1rem;
-//           }
-//         }
-//       }
-// }

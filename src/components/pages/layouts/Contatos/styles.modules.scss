@@ -1,24 +1,26 @@
 .container_contatos {
-    height: 85vh;
+    min-height: 85vh; /* Use min-height para evitar que o conteúdo faça o scroll */
     width: 100%;
     background: linear-gradient(180deg, #f1e2fb 0%, #ffb084 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
+    overflow: hidden; /* Evitar scroll adicional */
 
     .titlecontatos {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        flex-direction: column; /* Alinhar título e linhas verticalmente */
+        align-items: center; /* Centralizar o título */
         position: relative;
+        padding: 2rem 0; /* Espaço ao redor do título para visibilidade */
 
         .title {
             display: flex;
             align-items: center;
-            position: absolute;
-            top: -70px;
-            left: 6rem;
+            position: relative; /* Remover posicionamento absoluto */
+            margin: 0 auto; /* Centralizar o título */
 
             h2 {
                 font-size: 3rem;
@@ -38,6 +40,7 @@
         align-items: center;
         justify-content: center;
         height: 100%;
+        margin-top: 2rem;
 
         .image-meialua {
             display: flex;
@@ -95,6 +98,8 @@
                 margin: 0.5rem 1rem;
             }
         }
+
+      
     }
     @media (max-width: 1150px) {
         .titlecontatos .title {
@@ -142,7 +147,7 @@
         }
 
         .image-meialua {
-            margin-top: 13rem;
+            margin-top: 2rem;
             margin-bottom: 5rem;
 
             flex-direction: column;

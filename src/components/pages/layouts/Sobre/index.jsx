@@ -6,15 +6,12 @@ function Sobre() {
     return (
         <section id="sobre-mim">
             <div className="containerabout">
-                {/* Linha no topo */}
                 <div className="linhatopo"></div>
 
-                {/* Separando a imagem das estrelas */}
                 <div className="estrela_img">
                     <img className="img" src={imageEstrela} alt="Estrelas" />
                 </div>
 
-                {/* Conteúdo principal */}
                 <div className="content">
                     <div className="sobre">
                         <h2>Sobre mim</h2>
